@@ -12,8 +12,13 @@ body {
   padding-top: 5rem;
 }
 
-.project {
+.skills1 {
   background: #cccccc;
+  padding-top: 5rem;
+}
+
+.project {
+  background: #273036;
   padding-top: 5rem;
 }
 
@@ -22,10 +27,10 @@ body {
 }
 
 .contact {
-  background: #273036;
+  background: #cccccc;
   padding-top: 5rem;
 }
 
 .footer1 {
-  background: #cccccc;
+  background: #273036;
 }
