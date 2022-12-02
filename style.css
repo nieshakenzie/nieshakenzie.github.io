@@ -13,12 +13,12 @@ body {
 }
 
 .skills1 {
-  background: #cccccc;
+  background: #273036;
   padding-top: 5rem;
 }
 
 .project {
-  background: #273036;
+  background: #cccccc;
   padding-top: 5rem;
 }
 
@@ -27,10 +27,23 @@ body {
 }
 
 .contact {
-  background: #cccccc;
+  background: #273036;
   padding-top: 5rem;
 }
 
 .footer1 {
-  background: #273036;
+  background: #cccccc;
+}
+
+.text_link {
+  text-decoration: solid;
+}
+
+.about_text {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
 }
