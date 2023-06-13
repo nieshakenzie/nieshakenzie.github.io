@@ -127,3 +127,35 @@ body {
   .hover:hover {
     color: #4f4f4f;
   }
+
+  .career-roadmap {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .career-roadmap h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .milestones {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .milestones li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .milestone-title {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .milestone-description {
+    color: #777;
+  }
+  
