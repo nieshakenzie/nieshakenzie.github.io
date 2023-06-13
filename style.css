@@ -1,0 +1,129 @@
+body {
+    background-color: #212529; /* Set the dark background color */
+    color: #ffffff; /* Set the light text color */
+  }
+
+  .navbar {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  .navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-brand {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+  }
+  
+  .navbar-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .navbar-menu li a:hover {
+    color: #4f4f4f;
+  }
+  
+
+  .image-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .image-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .image-container .image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Additional styling for text */
+    /* background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px; */
+  }
+
+  .images-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .images-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+  }
+
+  .images-container:hover img {
+    transform: translateY(-5px);
+  }
+
+  .images-container .images-text {
+    position: absolute;
+    top: 85%;
+    left: 5%;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Additional styling for text */
+    /* background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px; */
+  }
+
+  .images-container:hover p{
+    transform: translateY(-2px);
+  }
+
+  .darkened-img {
+    filter: brightness(0.6); /* Adjust the value between 0 and 1 */
+  }
+
+  .photo{
+    max-width: 50%;
+  }
+
+  .quote {
+    border-left: 4px solid #333;
+    padding: 10px;
+    margin: 10px 0;
+    font-style: italic;
+  }
+  
+  .hidden-text {
+    display: none;
+  }
+  
+  .hover:hover {
+    color: #4f4f4f;
+  }
