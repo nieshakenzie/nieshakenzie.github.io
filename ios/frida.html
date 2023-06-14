@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../java.js">
+        <title>Marmut Handsome</title>
+        <style>
+            .navbar {
+                background-color: transparent;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-transparent">
+            <div class="navbar-container">
+                <ul class="navbar-menu">
+                    <li class="nav-item">
+                        <br>
+                        <a href="../index.html#post">Post</a>
+                    </li>
+                    <li class="nav-item">
+                        <br>
+                        <a href="../index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <br>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <br>
+                        <a href="../index.html#skill">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <br>
+                        <a href="../index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+
+        <!-- Top -->
+        <br><br><br><br>
+        <section name="top" id="top">
+            <div class="container">
+                <br><br><br>
+                <div class="row">
+                    <div class="col-6 col-t-12 text-center">
+                        <img src="../assets/Jurnals/Frida.jpeg" width="500" height="500" alt="simplectf" class="rounded-4">
+                    </div>
+                    <div class="col-6 align-self-center">
+                        <h1>IOS FRIDA OBJECTION PENTESTING</h1>
+                        <br>
+                        <a href="../ios/ios.html">
+                            <button type="button" class="btn btn-outline-light">IOS Pentest</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- End Top -->
+
+        <!-- Content -->
+        <br><br><br><br><br>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8">
+                        <p class="fw-bold fs-3">INSTALL FRIDA OBJECTION
+                        </p>
+                        <!--  -->
+                        <div class="fs-6">
+                            <p>
+                                To install Frida and its associated tools, you can follow these step-by-step instructions:
+                            </p>
+                            <br>
+                            <h5>Install Python:
+                            </h5>
+                            <p>
+                                Frida requires Python to be installed on your system. You can download and install Python from the official Python website
+                                <a href="https://www.python.org">https://www.python.org</a>
+                                Make sure to choose the appropriate version for your operating system.
+                            </p>
+                            <br>
+                            <h5>
+                                Install Frida and Objection:
+                            </h5>
+                            <blockquote class="quote">
+                                <footer>
+                                    <cite>$ pip3 install frida-tools
+                                    </cite>
+                                    <br>
+                                    <cite>$ pip3 install objection
+                                    </cite>
+                                </footer>
+                            </blockquote>
+                            <br>
+                            <h5>
+                                Step Setting For IOS:
+                            </h5>
+                            <p>
+                                Start Cydia and add Frida repository by going to
+                                <span class="text-bg-info">Manage -> Sources -> Edit -> Add</span>
+                                and enter
+                                <a href="https://build.frida.re">https://build.frida.re</a>. You should now be able to find and install the Frida package which lets Frida inject JavaScript into apps running on your iOS device. This happens over USB, so you will need to have your USB cable handy, though there no need to plug it in just yet.
+
+                            </p>
+                            <br>
+                            <h5>
+                                List all running processes:
+                            </h5>
+                            <blockquote class="quote">
+                                <footer>
+                                    <cite>
+                                        $ frida-ps -U
+                                    </cite>
+                                    <br>
+                                    <cite>
+                                        $ frida-ps -Ua
+                                    </cite>
+                                </footer>
+                            </blockquote>
+                            <br>
+                            <h5>
+                                List all installed applications:
+                            </h5>
+                            <blockquote class="quote">
+                                <footer>
+                                    <cite>
+                                        $ frida-ps -Uai
+                                    </cite>
+                                </footer>
+                            </blockquote>
+                            <br>
+                            <h5>
+                                Use OBJECTION for IOS
+                            </h5>
+                            <blockquote class="quote">
+                                <footer>
+                                    <cite>
+                                        $ objection -g 12345 explore
+                                    </cite>
+                                </footer>
+                            </blockquote>
+                            <p>
+                                You can use PID or Bundle ID to lauch app and attach it.
+                            </p>
+                            <blockquote class="quote">
+                                <footer>
+                                    <cite>
+                                        $ objection -g com.apple.tv explore
+                                    </cite>
+                                </footer>
+                            </blockquote>
+                            <br>
+                            <h5>
+                                IOS info binary:
+                            </h5>
+                            <blockquote class="quote">
+                                <footer>
+                                    <cite>
+                                        # ios info binary
+                                    </cite>
+                                </footer>
+                            </blockquote>
+                            <img src="../assets/Temp/SCR-20230614-vpq.png" alt="a" width="500px">
+                            <br>
+                            <br>
+                            <br>
+                            <h5>
+                                App bundle info:
+                            </h5>
+                            <p>
+                                Use ios bundles to list app frameworks and bundles.
+                            </p>
+                            <blockquote class="quote">
+                                <footer>
+                                    <cite>
+                                        # ios bundles list_frameworks
+                                    </cite>
+                                </footer>
+                            </blockquote>
+                            <img src="../assets/Temp/SCR-20230614-vtk.png" alt="a" width="500px">
+                            <blockquote class="quote">
+                                <footer>
+                                    <cite>
+                                        # ios bundles list_bundles
+                                    </cite>
+                                </footer>
+                            </blockquote>
+                            <img src="../assets/Temp/SCR-20230614-vuy.png" alt="a" width="500px">
+                            <br>
+                            <br>
+                            <br>
+                            <h5>
+                                List app directories:
+                            </h5>
+                            <blockquote class="quote">
+                                <footer>
+                                    <cite>
+                                        # env
+                                    </cite>
+                                </footer>
+                            </blockquote>
+                            <img src="../assets/Temp/SCR-20230614-vws.png" alt="a" width="500px">
+                            <br>
+                            <br>
+                            <br>
+                            <h5>
+                                List files in app directory:
+                            </h5>
+                            <p>
+                                You can use ls command to list files in app directory, and you can use cd command to check working directory
+                            </p>
+                            <blockquote class="quote">
+                                <footer>
+                                    <cite>
+                                        # ls
+                                    </cite>
+                                </footer>
+                            </blockquote>
+                            <img src="../assets/Temp/SCR-20230614-vy0.png" alt="a" width="500px">
+                            <br>
+                            <br>
+                            <br>
+                            <h5>
+                                View file content:
+                            </h5>
+                            <p>
+                                You can use file cat command to view file content.
+                            </p>
+                            <blockquote class="quote">
+                                <footer>
+                                    <cite>
+                                        # file cat Info.plist
+                                    </cite>
+                                </footer>
+                            </blockquote>
+                            <img src="../assets/Temp/SCR-20230614-w0l.png" alt="a" width="500px">
+                            <br>
+                            <br>
+                            <p>
+                                You can use for plist type file, can also use ios plist cat "plist file path" to decode plist file.
+                            </p>
+                            <blockquote class="quote">
+                                <footer>
+                                    <cite>
+                                        # ios plist cat Info.plist
+                                    </cite>
+                                </footer>
+                            </blockquote>
+                            <img src="../assets/Temp/SCR-20230614-w1s.png" alt="a" width="500px">
+                            <br>
+                            <br>
+                            <br>
+                            <h5>
+                                Download file from device:
+                            </h5>
+                            <p>
+                                You can use file download "file path" to download a file from device.
+                            </p>
+                            <blockquote class="quote">
+                                <footer>
+                                    <cite>
+                                        # file download Info.plist
+                                    </cite>
+                                </footer>
+                            </blockquote>
+                            <img src="../assets/Temp/SCR-20230614-w42.png" alt="a" width="500px">
+                            <br>
+                            <br>
+                            <br>
+                            <h5>
+                                See the Cookies:
+                            </h5>
+                            <p>
+                                You can use ios cookies get to get cookies.
+                            </p>
+                            <blockquote class="quote">
+                                <footer>
+                                    <cite>
+                                        # ios cookies get
+                                    </cite>
+                                </footer>
+                            </blockquote>
+                            <img src="../assets/Temp/SCR-20230614-w5n.png" alt="a" width="500px">
+                            <br>
+                            <br>
+                            <br>
+                            <h5>
+                                Dump all of the credentials:
+                            </h5>
+                            <p>
+                                You can use ios nsurlcredentialstorage dump to dump all of the credentials in the shared NSURLCredentialStorage.
+                            </p>
+                            <blockquote class="quote">
+                                <footer>
+                                    <cite>
+                                        # ios nsurlcredentialstorage dump
+                                    </cite>
+                                </footer>
+                            </blockquote>
+                            <img src="../assets/Temp/SCR-20230614-w70.png" alt="a" width="500px">
+                            <br>
+                            <br>
+                            <br>
+                            <h5>
+                                List all loaded frameworks/modules:
+                            </h5>
+                            <p>
+                                You can use memory list modules to list all the loaded modules in the current process.
+                            </p>
+                            <blockquote class="quote">
+                                <footer>
+                                    <cite>
+                                        # memory list modules
+                                    </cite>
+                                </footer>
+                            </blockquote>
+                            <img src="../assets/Temp/SCR-20230614-w9q.png" alt="a" width="500px">
+                            <br>
+                            <br>
+                            <br>
+                            <h5>
+                                Dump app memory:
+                            </h5>
+                            <p>
+                                You can use memory dump all "output file path" to dump app memory to.
+                            </p>
+                            <blockquote class="quote">
+                                <footer>
+                                    <cite>
+                                        # memory dump all memory.dump
+                                    </cite>
+                                </footer>
+                            </blockquote>
+                            <img src="../assets/Temp/SCR-20230614-wce.png" alt="a" width="500px">
+                            <br>
+                            <br>
+                            <p>
+                                After dump memory, you can use strings to check readable strings in memory,
+                            </p>
+                            <blockquote class="quote">
+                                <footer>
+                                    <cite>
+                                        # strings memory.dump | grep -i username
+                                    </cite>
+                                    <br>
+                                    <cite>
+                                        # strings memory.dump | grep -i token
+                                    </cite>
+                                </footer>
+                            </blockquote>
+                            <br>
+                            <br>
+                            <h5>
+                                Dump/add/clear iOS keychain:
+                            </h5>
+                            <p>
+                                You can use memory dump all "output file path" to dump app memory to.
+                            </p>
+                            <blockquote class="quote">
+                                <footer>
+                                    <cite>
+                                        add : Add an entry to the iOS keychain
+                                    </cite>
+                                    <br>
+                                    <cite>
+                                        dump : Dump the keychain for the current app's entitlement group
+                                    </cite>
+                                    <br>
+                                    <cite>
+                                        clear : Delete all keychain entries for the current app's entitlement group
+                                    </cite>
+                                </footer>
+                            </blockquote>
+                            <p>
+                                Using ios keychain.
+                            </p>
+                            <blockquote class="quote">
+                                <footer>
+                                    <cite>
+                                        # ios keychain dump
+                                    </cite>
+                                </footer>
+                            </blockquote>
+                            <img src="../assets/Temp/SCR-20230614-whx.png" alt="a" width="500px">
+                            <br>
+                            <br>
+                            <br>
+                            <h5>
+                                Monitor Pasteboard:
+                            </h5>
+                            <p>
+                                You can use ios pasteboard monitor to monitor the iOS pasteboard.
+                            </p>
+                            <blockquote class="quote">
+                                <footer>
+                                    <cite>
+                                        # ios pasteboard monitor
+                                    </cite>
+                                </footer>
+                            </blockquote>
+                            <br>
+                            <br>
+                            <h5>
+                                Disable sslpinning:
+                            </h5>
+                            <p>
+                                Objection is our best recommendation and first approach to remove certificate pinning on iOS.
+                            </p>
+                            <blockquote class="quote">
+                                <footer>
+                                    <cite>
+                                        # ios sslpinning disable --quiet
+                                    </cite>
+                                </footer>
+                            </blockquote>
+                            <img src="../assets/Temp/SCR-20230614-wmc.png" alt="a" width="500px">
+                            <br>
+                            <br>
+                        </div>
+                        <!--  -->
+                        <br><br>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </section>
+        <!-- End Content -->
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container p-5">
+                <div class="row justify-content-between">
+                    <div class="col-auto">
+                        <span class="text-body-emphasis">2023 ©
+                            <a href="#" class="text-decoration-none text-light hover">Ferry</a>
+                        </span>
+                    </div>
+                    <div class="col-auto">
+                        <a href="" class="p-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" class="bi bi-twitter" viewbox="0 0 16 16">
+                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                            </svg>
+                        </a>
+                        <a href="" class="p-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" class="bi bi-github" viewbox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                        </a>
+                        <a href="" class="p-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" class="bi bi-linkedin" viewbox="0 0 16 16">
+                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </footer>
+        <!-- End Footer -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    </body>
+</html>
