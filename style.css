@@ -89,11 +89,11 @@ body {
 
   .images-container .images-text {
     position: absolute;
-    top: 85%;
+    top: 80%;
     left: 5%;
     color: white;
     font-size: 20px;
-    text-align: center;
+    /* text-align: center; */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     /* Additional styling for text */
     /* background-color: rgba(0, 0, 0, 0.5);
@@ -158,3 +158,8 @@ body {
   .milestone-description {
     color: #777;
   }
+
+  .element {
+    margin: 10px;
+  }
+  
