@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../java.js" />
+    <title>TOP 10 OWASP</title>
+    <style>
+      .navbar {
+        background-color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-transparent">
+      <div class="navbar-container">
+        <ul class="navbar-menu">
+          <li class="nav-item">
+            <br />
+            <a href="/side/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <br />
+            <a href="../index.html#post">Post</a>
+          </li>
+          <li class="nav-item">
+            <br />
+            <a href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <br />
+            <a href="/side/about.html#project">Project</a>
+          </li>
+          <li class="nav-item">
+            <br />
+            <a href="/side/about.html#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Top -->
+    <br /><br /><br /><br />
+    <section name="top" id="top">
+      <div class="container">
+        <br /><br /><br />
+        <div class="row">
+          <div class="col-6 col-t-12 text-center">
+            <img
+              src="../assets/Jurnals/Dirsearch.png"
+              width="500"
+              height="500"
+              alt="simplectf"
+              class="rounded-4" />
+          </div>
+          <div class="col-6 align-self-center">
+            <h1>TOP 10 OWASP FOR WEB VULNERABILITIES</h1>
+            <p class="fw-lighter">27 June 2023</p>
+            <br />
+            <a href="../web/web.html">
+              <button type="button" class="btn btn-outline-light">
+                Web Pentest
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Top -->
+
+    <!-- Content -->
+    <br /><br /><br /><br /><br />
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-8">
+            <p class="fw-bold fs-3">Introduction:</p>
+            <!--  -->
+            <p>
+              In the realm of web development and cybersecurity, understanding
+              and addressing potential vulnerabilities is crucial. The Open Web
+              Application Security Project (OWASP) provides a valuable framework
+              for identifying and mitigating these vulnerabilities. In this
+              article, we will explore the top ten OWASP web vulnerabilities,
+              providing an overview of each vulnerability and detailing the
+              potential risks they pose to web applications. By familiarizing
+              yourself with these vulnerabilities, you can take proactive
+              measures to secure your web applications and protect sensitive
+              data.
+            </p>
+
+            <h4>Injection</h4>
+            <p>
+              Description:
+              <br />
+              Injection vulnerabilities occur when untrusted data is inserted
+              into a web application's code or database queries without proper
+              validation. This can lead to malicious code execution or
+              unauthorized access to sensitive data.
+            </p>
+            <p>
+              Risk:
+              <br />
+              Attackers can exploit injection vulnerabilities to execute
+              arbitrary commands, manipulate databases, or gain unauthorized
+              access to sensitive information.
+            </p>
+            <br /><br />
+
+            <h4>Broken Authentication</h4>
+            <p>
+              Description:
+              <br />
+              Weak authentication and session management mechanisms can lead to
+              unauthorized access to user accounts or sessions. This
+              vulnerability can occur due to poor password policies, session
+              timeouts, or insecure password recovery mechanisms.
+            </p>
+            <p>
+              Risk:
+              <br />
+              Attackers can exploit broken authentication vulnerabilities to
+              hijack user sessions, impersonate users, or gain administrative
+              privileges.
+            </p>
+            <br /><br />
+
+            <h4>Sensitive Data Exposure</h4>
+            <p>
+              Description:
+              <br />
+              Inadequate protection of sensitive data, such as passwords, credit
+              card details, or personal information, can lead to its
+              unauthorized disclosure. This vulnerability may arise from weak
+              encryption, improper data storage, or insecure communication
+              channels.
+            </p>
+            <p>
+              Risk:
+              <br />
+              Attackers can intercept and access sensitive data, leading to
+              identity theft, financial fraud, or unauthorized account access.
+            </p>
+            <br /><br />
+
+            <h4>XML External Entity (XXE) Attacks</h4>
+            <p>
+              Description:
+              <br />
+              XML processors that process untrusted XML input can be vulnerable
+              to XXE attacks. This allows attackers to read local files, perform
+              remote requests, or execute arbitrary code.
+            </p>
+            <p>
+              Risk:
+              <br />
+              XXE attacks can lead to information disclosure, denial of service,
+              or even server-side remote code execution.
+            </p>
+            <br /><br />
+
+            <h4>Broken Access Control</h4>
+            <p>
+              Description:
+              <br />
+              Inadequate access controls and authorization mechanisms can allow
+              attackers to access unauthorized functionality or perform
+              privileged actions. This vulnerability may result from improper
+              enforcement of user roles, insecure direct object references, or
+              missing input validation.
+            </p>
+            <p>
+              Risk:
+              <br />
+              Attackers can exploit broken access control vulnerabilities to
+              bypass authorization, gain unauthorized access to resources, or
+              modify other users' data.
+            </p>
+            <br /><br />
+
+            <h4>Security Misconfigurations</h4>
+            <p>
+              Description:
+              <br />
+              Security misconfigurations occur when applications, frameworks,
+              servers, or other components are not securely configured. This may
+              include default configurations, unused services, error messages
+              revealing sensitive information, or weak security settings.
+            </p>
+            <p>
+              Risk:
+              <br />
+              Security misconfigurations can lead to unauthorized access, data
+              leakage, or facilitate other attacks due to the exposure of
+              vulnerable components.
+            </p>
+            <br /><br />
+
+            <h4>Cross-Site Scripting (XSS)</h4>
+            <p>
+              Description:
+              <br />
+              XSS vulnerabilities occur when untrusted data is included in web
+              pages without proper validation. This allows attackers to inject
+              malicious scripts into the browser of unsuspecting users.
+            </p>
+            <p>
+              Risk:
+              <br />
+              Attackers can exploit XSS vulnerabilities to steal sensitive data,
+              deface websites, or hijack user sessions.
+            </p>
+            <br /><br />
+
+            <h4>Insecure Deserialization</h4>
+            <p>
+              Description:
+              <br />
+              Insecure deserialization vulnerabilities occur when untrusted
+              serialized data is processed without proper validation. Attackers
+              can exploit this vulnerability to execute arbitrary code, perform
+              injection attacks, or conduct denial-of-service attacks.
+            </p>
+            <p>
+              Risk:
+              <br />
+              Insecure deserialization can lead to remote code execution,
+              tampering of serialized objects, or unauthorized access to
+              sensitive data.
+            </p>
+            <br /><br />
+
+            <h4>Using Components with Known Vulnerabilities</h4>
+            <p>
+              Description:
+              <br />
+              Using outdated or vulnerable software components can introduce
+              security weaknesses into web applications. This vulnerability may
+              arise from failure to apply patches, using unsupported libraries,
+              or not monitoring for security updates.
+            </p>
+            <p>
+              Risk:
+              <br />
+              Attackers can exploit known vulnerabilities in components to gain
+              unauthorized access, execute arbitrary code, or perform other
+              malicious activities.
+            </p>
+            <br /><br />
+
+            <h4>Insufficient Logging and Monitoring</h4>
+            <p>
+              Description:
+              <br />
+              Inadequate logging and monitoring of security events can hinder
+              timely detection and response to attacks. This vulnerability may
+              occur due to poor log management, insufficient monitoring tools,
+              or failure to analyze log data.
+            </p>
+            <p>
+              Risk:
+              <br />
+              Insufficient logging and monitoring can delay incident response,
+              hamper forensic investigations, or allow attackers to persist
+              undetected within the system.
+            </p>
+            <br /><br />
+
+            <h4>Conclusion</h4>
+            <p>
+              Understanding the top ten OWASP web vulnerabilities is essential
+              for developers, security professionals, and website owners alike.
+              By recognizing these vulnerabilities and their potential risks,
+              you can implement effective security measures and mitigate
+              potential threats. Regular vulnerability assessments, secure
+              coding practices, and continuous monitoring can help safeguard web
+              applications, ensuring the protection of sensitive data and
+              maintaining user trust in an increasingly connected world.
+              Dirsearch is a valuable tool for professionals in the field of web
+              security. By following these steps and customizing your scans, you
+              can effectively identify hidden directories and files that may
+              pose a risk to web applications.
+            </p>
+            <!--  -->
+            <br /><br />
+          </div>
+          <div class="col-2"></div>
+        </div>
+      </div>
+    </section>
+    <!-- End Content -->
+  </body>
+</html>
