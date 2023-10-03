@@ -1,254 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../style.css">
-        <link rel="stylesheet" href="../java.js">
-        <title>SQLMAP</title>
-        <style>
-            .navbar {
-                background-color: transparent;
-            }
-        </style>
-    </head>
-    <body>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-transparent">
-            <div class="navbar-container">
-                <ul class="navbar-menu">
-                    <li class="nav-item">
-                        <br>
-                        <a href="/side/about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <br>
-                        <a href="../index.html#post">Post</a>
-                    </li>
-                    <li class="nav-item">
-                        <br>
-                        <a href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <br>
-                        <a href="/side/about.html#project">Project</a>
-                    </li>
-                    <li class="nav-item">
-                        <br>
-                        <a href="/side/about.html#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <!-- End Navbar -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../java.js" />
+    <link
+      rel="shortcut icon"
+      href="/assets/Jurnals/favicon.png"
+      type="image/x-icon" />
+    <title>SQLMAP</title>
+    <style>
+      .navbar {
+        background-color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-transparent">
+      <div class="navbar-container">
+        <ul class="navbar-menu">
+          <li class="nav-item">
+            <br />
+            <a href="/side/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <br />
+            <a href="../index.html#post">Post</a>
+          </li>
+          <li class="nav-item">
+            <br />
+            <a href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <br />
+            <a href="/side/about.html#project">Project</a>
+          </li>
+          <li class="nav-item">
+            <br />
+            <a href="/side/about.html#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End Navbar -->
 
-        <!-- Top -->
-        <br><br><br><br>
-        <section name="top" id="top">
-            <div class="container">
-                <br><br><br>
-                <div class="row">
-                    <div class="col-6 col-t-12 text-center">
-                        <img src="../assets/Jurnals/Sqlmap.jpeg" width="500" height="500" alt="simplectf" class="rounded-4">
-                    </div>
-                    <div class="col-6 align-self-center">
-                        <h1>SQL INJECTION USING SQLMAP</h1>
-                        <p class="fw-lighter">18 June 2023</p>
-                        <br>
-                        <a href="../web/web.html">
-                            <button type="button" class="btn btn-outline-light">Web Pentest</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Top -->
+    <!-- Top -->
+    <br /><br /><br /><br />
+    <section name="top" id="top">
+      <div class="container">
+        <br /><br /><br />
+        <div class="row">
+          <div class="col-6 col-t-12 text-center">
+            <img
+              src="../assets/Jurnals/Sqlmap.jpeg"
+              width="500"
+              height="500"
+              alt="simplectf"
+              class="rounded-4" />
+          </div>
+          <div class="col-6 align-self-center">
+            <h1>SQL INJECTION USING SQLMAP</h1>
+            <p class="fw-lighter">18 June 2023</p>
+            <br />
+            <a href="../web/web.html">
+              <button type="button" class="btn btn-outline-light">
+                Web Pentest
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Top -->
 
-        <!-- Content -->
-        <br><br><br><br><br>
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-2"></div>
-                    <div class="col-8">
-                        <p class="fw-bold fs-3">Step-by-Step Guide: Using SQLMap for Automated SQL Injection Testing:
-                        </p>
-                        <!--  -->
-                        <div>
-                            <p>
-                                In this step-by-step guide, we will explore how to use SQLMap, a popular open-source penetration testing tool, to automate SQL injection testing. SQLMap helps security professionals identify and exploit SQL injection vulnerabilities in web applications. By following these instructions, you will be able to perform automated SQL injection testing using SQLMap effectively.
-                            </p>
-                            <br>
-                            <h4>Install SQLMap:
-                            </h4>
-                            <p>
-                                Download SQLMap from the official GitHub repository:
-                                <a href="https://github.com/sqlmapproject/sqlmap#installation" target="_blank">Github</a>
-                            </p>
-                            <blockquote class="quote">
-                                <footer>
-                                    <cite>
-                                        git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
-                                    </cite>
-                                </footer>
-                            </blockquote>
-                            <br>
-                            <br>
-                            <h4>
-                                Identify the Target:
-                            </h4>
-                            <ul>
-                                <li>
-                                    Identify the target web application that you want to test for SQL injection vulnerabilities.
-                                </li>
-                                <li>
-                                    Ensure you have proper authorization to perform security testing on the target application.
-                                </li>
-                            </ul>
-                            <br>
-                            <br>
-                            <h4>
-                                Analyze the Target:
-                            </h4>
-                            <ul>
-                                <li>
-                                    Use web proxies or browser developer tools to inspect the target application's requests and responses.
-                                </li>
-                                <li>
-                                    Identify parameters that might be vulnerable to SQL injection attacks.
-                                </li>
-                            </ul>
-                            <br>
-                            <br>
-                            <h4>
-                                Launch SQLMap:
-                            </h4>
-                            <ul>
-                                <li>
-                                    Open a terminal or command prompt.
-                                </li>
-                                <li>
-                                    Navigate to the directory where SQLMap is installed.
-                                </li>
-                            </ul>
-                            <br>
-                            <br>
-                            <h4>
-                                Discover SQL Injection Vulnerabilities:
-                            </h4>
-                            <p>
-                                Run the following command to perform a basic test for SQL injection vulnerabilities:
-                            </p>
-                            <blockquote class="quote">
-                                <footer>
-                                    <cite>
-                                        sqlmap -u "target_url" --batch
-                                    </cite>
-                                </footer>
-                            </blockquote>
-                            <p>Note: Replace "target_url" with the URL of the target application.</p>
-                            <br>
-                            <br>
-                            <h4>
-                                Explore Advanced Options:
-                            </h4>
-                            <ul>
-                                <li>
-                                    Review SQLMap's advanced options and customization features to fine-tune the testing process.
-                                </li>
-                                <li>
-                                    Experiment with options such as parameter tampering, level of tests, and risk threshold to obtain accurate results.
-                                </li>
-                            </ul>
-                            <br>
-                            <br>
-                            <h4>
-                                Perform Full Scan:
-                            </h4>
-                            <p>
-                                Execute a comprehensive scan to identify all possible SQL injection vulnerabilities:
-                            </p>
-                            <blockquote class="quote">
-                                <footer>
-                                    <cite>
-                                        sqlmap -u "target_url" --level "1-5" --risk "1-3"
-                                    </cite>
-                                </footer>
-                            </blockquote>
-                            <p>
-                                Note: Adjust the --level and --risk parameters based on your requirements and the target application's complexity.
-                            </p>
-                            <br>
-                            <br>
-                            <h4>
-                                Exploit the Vulnerability:
-                            </h4>
-                            <p>
-                                Once SQLMap identifies a vulnerable parameter, use the --dump option to retrieve data from the database.
-                            </p>
-                            <blockquote class="quote">
-                                <footer>
-                                    <cite>
-                                        sqlmap -u "target_url" --batch --dump
-                                    </cite>
-                                </footer>
-                            </blockquote>
-                            <p>
-                                Note: SQLMap will extract and display the compromised data.
-                            </p>
-                            <br><br>
-                            <h4>
-                                Retrieve Data:
-                            </h4>
-                            <ul>
-                                <li>
-                                    Once you have identified the target database, you can retrieve data from specific tables or columns.
-                                </li>
-                            </ul>
-                            <p>
-                                Use the following command to retrieve data from a table:
-                            </p>
-                            <blockquote class="quote">
-                                <footer>
-                                    <cite>
-                                        sqlmap.py -u "target URL" --dump -D "database name" -T "table name" -C "column names"
-                                    </cite>
-                                </footer>
-                            </blockquote>
-                            <p>
-                                Note: Replace "database name", "table name", and "column names" with the appropriate values. This command will extract the specified data from the target database.
-                            </p>
-                            <br><br>
-                            <h4>
-                                Review Results and Generate Reports:
-                            </h4>
-                            <ul>
-                                <li>
-                                    Analyze the results provided by SQLMap to understand the extent and severity of the SQL injection vulnerabilities discovered.
-                                </li>
-                                <li>
-                                    Generate comprehensive reports to document the findings and share them with relevant stakeholders.
-                                </li>
-                            </ul>
-                            <br><br><br>
-                            <h4>
-                                Conclusion:
-                            </h4>
-                            <p>
-                                By following this step-by-step guide, you have learned how to use SQLMap to automate SQL injection testing. Remember to always obtain proper authorization and adhere to ethical hacking guidelines when performing security assessments. Regularly scanning and addressing SQL injection vulnerabilities will help safeguard web applications against potential exploitation and data breaches.
-                            </p>
-                            <p>
-                                Note: Customize the content, add relevant examples, and ensure the information aligns with your specific needs to create a unique and valuable article.
-                            </p>
-                            <!--  -->
-                            <br><br>
-                        </div>
-                    </div>
-                    <div class="col-2"></div>
-                </div>
-            </section>
-            <!-- End Content -->
-        </body>
-    </body>
+    <!-- Content -->
+    <br /><br /><br /><br /><br />
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-8">
+            <p class="fw-bold fs-3">
+              Step-by-Step Guide: Using SQLMap for Automated SQL Injection
+              Testing:
+            </p>
+            <!--  -->
+            <div>
+              <p>
+                In this step-by-step guide, we will explore how to use SQLMap, a
+                popular open-source penetration testing tool, to automate SQL
+                injection testing. SQLMap helps security professionals identify
+                and exploit SQL injection vulnerabilities in web applications.
+                By following these instructions, you will be able to perform
+                automated SQL injection testing using SQLMap effectively.
+              </p>
+              <br />
+              <h4>Install SQLMap:</h4>
+              <p>
+                Download SQLMap from the official GitHub repository:
+                <a
+                  href="https://github.com/sqlmapproject/sqlmap#installation"
+                  target="_blank"
+                  >Github</a
+                >
+              </p>
+              <blockquote class="quote">
+                <footer>
+                  <cite>
+                    git clone --depth 1
+                    https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
+                  </cite>
+                </footer>
+              </blockquote>
+              <br />
+              <br />
+              <h4>Identify the Target:</h4>
+              <ul>
+                <li>
+                  Identify the target web application that you want to test for
+                  SQL injection vulnerabilities.
+                </li>
+                <li>
+                  Ensure you have proper authorization to perform security
+                  testing on the target application.
+                </li>
+              </ul>
+              <br />
+              <br />
+              <h4>Analyze the Target:</h4>
+              <ul>
+                <li>
+                  Use web proxies or browser developer tools to inspect the
+                  target application's requests and responses.
+                </li>
+                <li>
+                  Identify parameters that might be vulnerable to SQL injection
+                  attacks.
+                </li>
+              </ul>
+              <br />
+              <br />
+              <h4>Launch SQLMap:</h4>
+              <ul>
+                <li>Open a terminal or command prompt.</li>
+                <li>Navigate to the directory where SQLMap is installed.</li>
+              </ul>
+              <br />
+              <br />
+              <h4>Discover SQL Injection Vulnerabilities:</h4>
+              <p>
+                Run the following command to perform a basic test for SQL
+                injection vulnerabilities:
+              </p>
+              <blockquote class="quote">
+                <footer>
+                  <cite> sqlmap -u "target_url" --batch </cite>
+                </footer>
+              </blockquote>
+              <p>
+                Note: Replace "target_url" with the URL of the target
+                application.
+              </p>
+              <br />
+              <br />
+              <h4>Explore Advanced Options:</h4>
+              <ul>
+                <li>
+                  Review SQLMap's advanced options and customization features to
+                  fine-tune the testing process.
+                </li>
+                <li>
+                  Experiment with options such as parameter tampering, level of
+                  tests, and risk threshold to obtain accurate results.
+                </li>
+              </ul>
+              <br />
+              <br />
+              <h4>Perform Full Scan:</h4>
+              <p>
+                Execute a comprehensive scan to identify all possible SQL
+                injection vulnerabilities:
+              </p>
+              <blockquote class="quote">
+                <footer>
+                  <cite>
+                    sqlmap -u "target_url" --level "1-5" --risk "1-3"
+                  </cite>
+                </footer>
+              </blockquote>
+              <p>
+                Note: Adjust the --level and --risk parameters based on your
+                requirements and the target application's complexity.
+              </p>
+              <br />
+              <br />
+              <h4>Exploit the Vulnerability:</h4>
+              <p>
+                Once SQLMap identifies a vulnerable parameter, use the --dump
+                option to retrieve data from the database.
+              </p>
+              <blockquote class="quote">
+                <footer>
+                  <cite> sqlmap -u "target_url" --batch --dump </cite>
+                </footer>
+              </blockquote>
+              <p>Note: SQLMap will extract and display the compromised data.</p>
+              <br /><br />
+              <h4>Retrieve Data:</h4>
+              <ul>
+                <li>
+                  Once you have identified the target database, you can retrieve
+                  data from specific tables or columns.
+                </li>
+              </ul>
+              <p>Use the following command to retrieve data from a table:</p>
+              <blockquote class="quote">
+                <footer>
+                  <cite>
+                    sqlmap.py -u "target URL" --dump -D "database name" -T
+                    "table name" -C "column names"
+                  </cite>
+                </footer>
+              </blockquote>
+              <p>
+                Note: Replace "database name", "table name", and "column names"
+                with the appropriate values. This command will extract the
+                specified data from the target database.
+              </p>
+              <br /><br />
+              <h4>Review Results and Generate Reports:</h4>
+              <ul>
+                <li>
+                  Analyze the results provided by SQLMap to understand the
+                  extent and severity of the SQL injection vulnerabilities
+                  discovered.
+                </li>
+                <li>
+                  Generate comprehensive reports to document the findings and
+                  share them with relevant stakeholders.
+                </li>
+              </ul>
+              <br /><br /><br />
+              <h4>Conclusion:</h4>
+              <p>
+                By following this step-by-step guide, you have learned how to
+                use SQLMap to automate SQL injection testing. Remember to always
+                obtain proper authorization and adhere to ethical hacking
+                guidelines when performing security assessments. Regularly
+                scanning and addressing SQL injection vulnerabilities will help
+                safeguard web applications against potential exploitation and
+                data breaches.
+              </p>
+              <p>
+                Note: Customize the content, add relevant examples, and ensure
+                the information aligns with your specific needs to create a
+                unique and valuable article.
+              </p>
+              <!--  -->
+              <br /><br />
+            </div>
+          </div>
+          <div class="col-2"></div>
+        </div>
+      </div>
+    </section>
+    <!-- End Content -->
+  </body>
 </html>

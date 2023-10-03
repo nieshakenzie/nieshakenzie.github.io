@@ -1,202 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../style.css">
-        <link rel="stylesheet" href="../java.js">
-        <title>NMAP</title>
-        <style>
-            .navbar {
-                background-color: transparent;
-            }
-        </style>
-    </head>
-    <body>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-transparent">
-            <div class="navbar-container">
-                <ul class="navbar-menu">
-                    <li class="nav-item">
-                        <br>
-                        <a href="/side/about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <br>
-                        <a href="../index.html#post">Post</a>
-                    </li>
-                    <li class="nav-item">
-                        <br>
-                        <a href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <br>
-                        <a href="/side/about.html#project">Project</a>
-                    </li>
-                    <li class="nav-item">
-                        <br>
-                        <a href="/side/about.html#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <!-- End Navbar -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../java.js" />
+    <link
+      rel="shortcut icon"
+      href="/assets/Jurnals/favicon.png"
+      type="image/x-icon" />
+    <title>NMAP</title>
+    <style>
+      .navbar {
+        background-color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-transparent">
+      <div class="navbar-container">
+        <ul class="navbar-menu">
+          <li class="nav-item">
+            <br />
+            <a href="/side/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <br />
+            <a href="../index.html#post">Post</a>
+          </li>
+          <li class="nav-item">
+            <br />
+            <a href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <br />
+            <a href="/side/about.html#project">Project</a>
+          </li>
+          <li class="nav-item">
+            <br />
+            <a href="/side/about.html#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End Navbar -->
 
-        <!-- Top -->
-        <br><br><br><br>
-        <section name="top" id="top">
-            <div class="container">
-                <br><br><br>
-                <div class="row">
-                    <div class="col-6 col-t-12 text-center">
-                        <img src="../assets/Jurnals/Nmap.png" width="500" height="500" alt="simplectf" class="rounded-4">
-                    </div>
-                    <div class="col-6 align-self-center">
-                        <h1>HOW TO USE NMAP FOR PENTESTING</h1>
-                        <p class="fw-lighter">20 June 2023</p>
-                        <br>
-                        <a href="../web/web.html">
-                            <button type="button" class="btn btn-outline-light">Web Pentest</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Top -->
+    <!-- Top -->
+    <br /><br /><br /><br />
+    <section name="top" id="top">
+      <div class="container">
+        <br /><br /><br />
+        <div class="row">
+          <div class="col-6 col-t-12 text-center">
+            <img
+              src="../assets/Jurnals/Nmap.png"
+              width="500"
+              height="500"
+              alt="simplectf"
+              class="rounded-4" />
+          </div>
+          <div class="col-6 align-self-center">
+            <h1>HOW TO USE NMAP FOR PENTESTING</h1>
+            <p class="fw-lighter">20 June 2023</p>
+            <br />
+            <a href="../web/web.html">
+              <button type="button" class="btn btn-outline-light">
+                Web Pentest
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Top -->
 
-        <!-- Content -->
-        <br><br><br><br><br>
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-2"></div>
-                    <div class="col-8">
-                        <p class="fw-bold fs-3">Introduction:
-                        </p>
-                        <!--  -->
-                        <div>
-                            <p>
-                                Nmap (Network Mapper) is a powerful and versatile tool used in penetration testing to assess the security of computer networks. It allows pentesters to discover hosts, scan open ports, and gather valuable information about the target network. In this guide, we will explore the essential steps and commands to effectively utilize Nmap for pentesting purposes.
-                            </p>
-                            <br>
-                            <h4>Installing NMAP:
-                            </h4>
-                            <p>
-                                Before getting started, ensure that Nmap is installed on your system. You can download the latest version of Nmap from the official website <a href="https://nmap.org/">(https://nmap.org/)</a> or use package managers like apt or yum for Linux-based systems.
-                            </p>
-                            <br>
-                            <br>
-                            <h4>
-                                Understanding Nmap Scan Types:
-                            </h4>
-                            <p>
-                                Nmap offers various scan types to gather information about the target network. Here are a few commonly used scan types:
-                            </p>
-                            <ul>
-                                <li>
-                                    TCP SYN Scan (-sS): This scan type is stealthy and widely used for basic port scanning. It sends SYN packets to the target ports and analyzes the responses to determine open and closed ports.
-                                </li>
-                                <li>
-                                    UDP Scan (-sU): This scan type is used to discover open UDP ports on the target system. UDP scans can be slower compared to TCP scans due to the connectionless nature of UDP.
-                                </li>
-                                <li>
-                                    Comprehensive Scan (-sC): The comprehensive scan combines multiple scan techniques and scripts to provide an in-depth assessment of the target. It includes version detection, script scanning, and default vulnerability scanning.
-                                </li>
-                            </ul>
-                            <br>
-                            <br>
-                            <h4>
-                                Basic Nmap Commands:
-                            </h4>
-                            <p>
-                                Now, let's explore some basic Nmap commands to perform various scanning activities:
-                            </p>
-                            <ol>
-                                <li>
-                                    Perform a TCP SYN Scan:
-                                </li>
-                                <blockquote class="quote">
-                                    <footer>
-                                        <cite>
-                                            nmap -sS "Target"
-                                        </cite>
-                                    </footer>
-                                </blockquote>
-                                <li>
-                                    Perform a UDP Scan:
-                                </li>
-                                <blockquote class="quote">
-                                    <footer>
-                                        <cite>
-                                            nmap -sU "Target"
-                                        </cite>
-                                    </footer>
-                                </blockquote>
-                                <li>
-                                    Perform a Comprehensive Scan:
-                                </li>
-                                <blockquote class="quote">
-                                    <footer>
-                                        <cite>
-                                            nmap -sC -sV "Target"
-                                        </cite>
-                                    </footer>
-                                </blockquote>
-                            </ol>
-                            <br>
-                            <br>
-                            <h4>
-                                Analyzing Nmap Results:
-                            </h4>
-                            <p>
-                                Interpreting Nmap scan results is crucial for identifying potential vulnerabilities. Pay attention to the following information:
-                            </p>
-                            <ul>
-                                <li>
-                                    Open Ports: Identify which ports are open and the services running on them.
-                                </li>
-                                <li>
-                                    Service Versions: Determine the versions of services running on open ports.
-                                </li>
-                                <li>
-                                    Script Output: Review any script output that provides valuable insights into potential vulnerabilities.
-                                </li>
-                            </ul>
-                            <br>
-                            <br>
-                            <h4>
-                                Advanced Nmap Techniques:
-                            </h4>
-                            <p>
-                                Nmap offers advanced techniques to enhance your pentesting process. Some examples include:
-                            </p>
-                            <ul>
-                                <li>
-                                    OS Detection: Use the -O flag to identify the operating system running on the target.
-                                </li>
-                                <li>
-                                    Scripting Engine: Utilize Nmap's scripting engine with the --script option to run specific scripts for advanced scanning and vulnerability detection.
-                                </li>
-                            </ul>
-                            <br><br><br>
-                            <h4>
-                                Conclusion:
-                            </h4>
-                            <p>
-                                Nmap is a powerful tool that helps pentesters gain crucial insights into target networks. By following this guide and experimenting with different Nmap commands and techniques, you can effectively use Nmap for comprehensive network reconnaissance and vulnerability assessment during the pentesting process.
-                            </p>
-                            <p class="fw-bolder">
-                                Remember, always ensure that you have proper authorization and permission to conduct penetration testing activities on any network or system.
-                            </p>
-                            <!--  -->
-                            <br><br>
-                        </div>
-                    </div>
-                    <div class="col-2"></div>
-                </div>
-            </section>
-            <!-- End Content -->
-        </body>
-    </body>
+    <!-- Content -->
+    <br /><br /><br /><br /><br />
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-8">
+            <p class="fw-bold fs-3">Introduction:</p>
+            <!--  -->
+            <div>
+              <p>
+                Nmap (Network Mapper) is a powerful and versatile tool used in
+                penetration testing to assess the security of computer networks.
+                It allows pentesters to discover hosts, scan open ports, and
+                gather valuable information about the target network. In this
+                guide, we will explore the essential steps and commands to
+                effectively utilize Nmap for pentesting purposes.
+              </p>
+              <br />
+              <h4>Installing NMAP:</h4>
+              <p>
+                Before getting started, ensure that Nmap is installed on your
+                system. You can download the latest version of Nmap from the
+                official website
+                <a href="https://nmap.org/">(https://nmap.org/)</a> or use
+                package managers like apt or yum for Linux-based systems.
+              </p>
+              <br />
+              <br />
+              <h4>Understanding Nmap Scan Types:</h4>
+              <p>
+                Nmap offers various scan types to gather information about the
+                target network. Here are a few commonly used scan types:
+              </p>
+              <ul>
+                <li>
+                  TCP SYN Scan (-sS): This scan type is stealthy and widely used
+                  for basic port scanning. It sends SYN packets to the target
+                  ports and analyzes the responses to determine open and closed
+                  ports.
+                </li>
+                <li>
+                  UDP Scan (-sU): This scan type is used to discover open UDP
+                  ports on the target system. UDP scans can be slower compared
+                  to TCP scans due to the connectionless nature of UDP.
+                </li>
+                <li>
+                  Comprehensive Scan (-sC): The comprehensive scan combines
+                  multiple scan techniques and scripts to provide an in-depth
+                  assessment of the target. It includes version detection,
+                  script scanning, and default vulnerability scanning.
+                </li>
+              </ul>
+              <br />
+              <br />
+              <h4>Basic Nmap Commands:</h4>
+              <p>
+                Now, let's explore some basic Nmap commands to perform various
+                scanning activities:
+              </p>
+              <ol>
+                <li>Perform a TCP SYN Scan:</li>
+                <blockquote class="quote">
+                  <footer>
+                    <cite> nmap -sS "Target" </cite>
+                  </footer>
+                </blockquote>
+                <li>Perform a UDP Scan:</li>
+                <blockquote class="quote">
+                  <footer>
+                    <cite> nmap -sU "Target" </cite>
+                  </footer>
+                </blockquote>
+                <li>Perform a Comprehensive Scan:</li>
+                <blockquote class="quote">
+                  <footer>
+                    <cite> nmap -sC -sV "Target" </cite>
+                  </footer>
+                </blockquote>
+              </ol>
+              <br />
+              <br />
+              <h4>Analyzing Nmap Results:</h4>
+              <p>
+                Interpreting Nmap scan results is crucial for identifying
+                potential vulnerabilities. Pay attention to the following
+                information:
+              </p>
+              <ul>
+                <li>
+                  Open Ports: Identify which ports are open and the services
+                  running on them.
+                </li>
+                <li>
+                  Service Versions: Determine the versions of services running
+                  on open ports.
+                </li>
+                <li>
+                  Script Output: Review any script output that provides valuable
+                  insights into potential vulnerabilities.
+                </li>
+              </ul>
+              <br />
+              <br />
+              <h4>Advanced Nmap Techniques:</h4>
+              <p>
+                Nmap offers advanced techniques to enhance your pentesting
+                process. Some examples include:
+              </p>
+              <ul>
+                <li>
+                  OS Detection: Use the -O flag to identify the operating system
+                  running on the target.
+                </li>
+                <li>
+                  Scripting Engine: Utilize Nmap's scripting engine with the
+                  --script option to run specific scripts for advanced scanning
+                  and vulnerability detection.
+                </li>
+              </ul>
+              <br /><br /><br />
+              <h4>Conclusion:</h4>
+              <p>
+                Nmap is a powerful tool that helps pentesters gain crucial
+                insights into target networks. By following this guide and
+                experimenting with different Nmap commands and techniques, you
+                can effectively use Nmap for comprehensive network
+                reconnaissance and vulnerability assessment during the
+                pentesting process.
+              </p>
+              <p class="fw-bolder">
+                Remember, always ensure that you have proper authorization and
+                permission to conduct penetration testing activities on any
+                network or system.
+              </p>
+              <!--  -->
+              <br /><br />
+            </div>
+          </div>
+          <div class="col-2"></div>
+        </div>
+      </div>
+    </section>
+    <!-- End Content -->
+  </body>
 </html>
